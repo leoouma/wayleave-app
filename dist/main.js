@@ -121,7 +121,7 @@ var vill = L.geoJSON(centerline, {
         feature.properties.length +
         " Kilometres"
     );
-    layer.setStyle({ color: "red" });
+    layer.setStyle({ color: "red", dashArray: "20,15" });
   },
 });
 vill.addTo(nairobiVillages);
@@ -139,7 +139,12 @@ var sublocs = L.geoJSON(wayleavetrace, {
         feature.properties.width +
         " Metres"
     );
-    layer.setStyle({ color: "green", fillColor: "#17436E", fillOpacity: 0.3 });
+    layer.setStyle({
+      color: "green",
+      fillColor: "#17436E",
+      fillOpacity: 0.3,
+      dashArray: "20,15",
+    });
   },
 });
 sublocs.addTo(nairobiSublocs);
