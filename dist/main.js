@@ -68,7 +68,7 @@ centroids.addTo(map);
 const cBoundary = L.markerClusterGroup();
 const bdata = L.geoJSON(kilifi, {
   onEachFeature: function (feature, layer) {
-    layer.setStyle({ color: "red", fillColor: "#30D5C8", weight: 1 });
+    layer.setStyle({ color: "brown", fillColor: "#30D5C8", weight: 1 });
   },
 });
 bdata.addTo(cBoundary);
@@ -81,6 +81,9 @@ var surv = L.geoJSON(landparcels2, {
     layer.bindPopup(
       "<b>Parcel ID:</b> " +
         feature.properties.parcelid +
+        "<br>" +
+        "<b>Registered Area</b>" +
+        feature.properties.regarea +
         "<br>" +
         "<b>Trace Area: </b>" +
         feature.properties.tracearea +
