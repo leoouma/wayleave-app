@@ -82,7 +82,8 @@ var surv = L.geoJSON(landparcels2, {
       "<b>Parcel ID:</b> " +
         feature.properties.parcelid +
         "<br>" +
-        "<b>Registered Area</b>" +
+        "<b>Registered Area: </b>" +
+        " Ha" +
         feature.properties.regarea +
         "<br>" +
         "<b>Trace Area: </b>" +
