@@ -68,7 +68,7 @@ centroids.addTo(map);
 const cBoundary = L.markerClusterGroup();
 const bdata = L.geoJSON(kilifi, {
   onEachFeature: function (feature, layer) {
-    layer.setStyle({ color: "red", fillColor: "#30D5C8" });
+    layer.setStyle({ color: "red", fillColor: "#30D5C8", weight: 1 });
   },
 });
 bdata.addTo(cBoundary);
