@@ -40,7 +40,9 @@ L.control.scale().addTo(map);
 
 //Map coordinate display
 map.on("mousemove", function (e) {
-  $(".coordinate").html(`Lat: ${e.latlng.lat} Lng: ${e.latlng.lng}`);
+  $(".coordinate").html(
+    `Latitude: ${e.latlng.lat.toFixed(4)} Longitude: ${e.latlng.lng.toFixed(4)}`
+  );
 });
 
 //Geojson load towers
