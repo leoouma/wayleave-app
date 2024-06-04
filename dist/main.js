@@ -167,5 +167,5 @@ var overlayMaps = {
 };
 
 L.control
-  .layers(baseMaps, overlayMaps, { collapsed: true, position: "topleft" })
+  .layers(baseMaps, overlayMaps, { collapsed: false, position: "topleft" })
   .addTo(map);
